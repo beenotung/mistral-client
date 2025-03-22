@@ -1,0 +1,59 @@
+{
+  "name": "mistral-client",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "description": "Client SDK for Mistral AI API with rate limit throttling and helper functions to convert stream delta messages to html/markdown/text",
+  "keywords": [
+    "mistral",
+    "ai",
+    "LLM",
+    "api",
+    "client",
+    "sdk",
+    "rate limit",
+    "throttling",
+    "stream",
+    "html",
+    "markdown",
+    "text",
+    "typescript"
+  ],
+  "author": {
+    "name": "Beeno Tung",
+    "email": "aabbcc1241@yahoo.com.hk",
+    "url": "https://beeno-tung.surge.sh"
+  },
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/mistral-client.git"
+  },
+  "homepage": "https://github.com/beenotung/mistral-client#readme",
+  "bugs": {
+    "url": "https://github.com/beenotung/mistral-client/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "build": "rimraf dist && tsc -p . && rimraf dist/tsconfig.tsbuildinfo dist/env.* dist/demo.*",
+    "tsc": "tsc -p ."
+  },
+  "dependencies": {
+    "@beenotung/tslib": "^24.6.1",
+    "@mistralai/mistralai": "^1.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "dotenv": "^16.4.7",
+    "populate-env": "^2.4.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  }
+}

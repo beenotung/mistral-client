@@ -1,6 +1,6 @@
 {
   "name": "mistral-client",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "commonjs",
   "description": "Client SDK for Mistral AI API with rate limit throttling and helper functions to convert stream delta messages to html/markdown/text",
   "keywords": [

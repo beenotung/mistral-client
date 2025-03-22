@@ -10,7 +10,7 @@
     "api",
     "client",
     "sdk",
-    "rate limit",
+    "rate-limit",
     "throttling",
     "stream",
     "html",
